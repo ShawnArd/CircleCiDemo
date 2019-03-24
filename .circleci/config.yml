@@ -16,8 +16,10 @@ jobs:
     steps:
       #check out code form Github
       - checkout
-      
+
       # Checks if projects can build successfully
+      - run:
+          command: npm run install
       - run: 
-          name: Build project  
+          name: Build project
           command: npm run build
