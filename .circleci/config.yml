@@ -19,7 +19,7 @@ jobs:
 
       # Checks if projects can build successfully
       - run:
-          command: npm run install
+          command: npm install
       - run: 
           name: Build project
           command: npm run build
