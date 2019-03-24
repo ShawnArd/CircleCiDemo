@@ -1,5 +1,5 @@
 {
-  "name": "circleDemo",
+  "name": "CircleCiDemo",
   "version": "1.0.0",
   "description": "Demonstration application for CircleCI databases",
   "main": "src/server.js",
