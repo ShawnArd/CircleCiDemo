@@ -37,6 +37,14 @@ jobs:
       - checkout
 
       # Checks if projects can build successfully
+      - run: 
+          name: install Deps
+          command: npm install
       - run:
           command: npm run test:unit
-  
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - UnitTest
